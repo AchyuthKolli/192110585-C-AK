@@ -1,0 +1,19 @@
+#include<stdio.h>
+#include<stdlib.h>
+int main()
+{
+    int x,a,b,sub;
+    printf("enter the total number of users:");
+    scanf("%d",&a);
+    printf("enter the total number of staff:");
+    scanf("%d",&b);
+    if(a>0){
+        x=b/3;
+        sub=a-b-x;
+        printf("toatl number of students is:%d",sub);
+    }
+    else{
+        printf("invlaid input");
+    }
+    return 0;
+}
