@@ -1,19 +1,29 @@
 #include<stdio.h>
-void main() {
- int num,m,n;
- printf("enter the starting number= ");
- scanf("%d",&m);
- printf("enter the ending number= ");
- scanf("%d",&n);
- for (num = m; num <= n; num++) {
-   if (num % 2 == 1){
+#include<stdlib.h>
+int main()
+{
+    int num,m,n;
+    printf("enter starting number (M):");
+    scanf("%d",&m);
+    printf("enter ending number (N):");
+    scanf("%d",&n);
+    if(m>0){
+    if(m<=n){
+    for (num = m; num < n; num++) {
+    if (num % 2 != 0){
      printf ("the odd numbers are=%d\n ", num);}}
      printf("\n");
-      for (num = m; num <= n; num++){
+      for (num = m; num < n; num++){
     if(num%2==0)
     {
         printf("the even numbers are= %d\n",num);
+    }}}
+    else
+    {
+        printf("invalid input");
+    }}
+    else
+    {
+        printf("invalid input");
     }
-    
- }
 }
